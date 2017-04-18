@@ -286,9 +286,13 @@ main {
 	overflow: auto;
 }
 
-
 .introCont {
+	position: relative;
 	margin: 0 auto 100vh;
+}
+
+.introImage {
+	margin: 0 auto;
 	width: 150px;
 	height: 150px;
     border-radius: 50%;
@@ -300,12 +304,14 @@ main {
 
 .introCopy {
 	width: 100%;
-	padding: 0 5%;
+	max-width: 375px;
+	margin: 25px auto;
+	text-align: center;
 	font: 300 1.9em 'Montserrat', sans-serif;
 
 }
 
-#introImage {
+#LRGintroImage {
 	display: none;
 }
 
@@ -315,14 +321,13 @@ main {
 }
 
 .scrollNext {
-  color: #ccc;
+	position: relative;
+	top: 10px;
+	color: #ccc;
 }
 
 #angleDown {
-	position: absolute;
-	top: 10px;
-	left: 43%;
-	margin: 0 auto;
+	display: inline-block;
 	width: 20px;
 	height: 20px;
 	border-color: #ccc;
@@ -330,8 +335,6 @@ main {
 	border-width: 0 1px 1px 0;
 	transform: rotate(45deg); 
 }
-
-
 
 .projContainer {
 	padding: 0 5%;
