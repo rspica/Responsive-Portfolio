@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robert Spica Portfolio</title>
+ 	<link rel="stylesheet" type="text/css" href="./assets/reset.css"> 
+	<link rel="stylesheet" type="text/css" href="./assets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Overpass+Mono:light,semi-bold" rel="stylesheet">	
+
+
+</head>
+
+<body>
+	<!-- start main Navigation container -->
+	<header class="navTop">
+		<h1 class="navBrand"><a href="./index.html" class="navMain navBrand">Robert Spica</a></h1>
+		<ul>
+			<li><a href="./index.html" class="navMain">about</a></li>
+			<li><a href="./portfolio.html" class="navMain">work</a></li>
+			<li><a href="./contact.html" class="navMain">connect</a></li>
+		</ul>
+	</header>
+
+
+	<!-- start contact container -->
+	<section id="formCont">
+		<form action="#" method="post">
+		<fieldset>
+			<label for="first-name"></label>
+			<input type="text" id="name" name="first-name" placeholder="First Name">
+
+			<label for="last-name"></label>
+			<input type="text" id="lastName" name="last-name" placeholder="Last Name">
+
+			<label for="note"></label>
+			<textarea type="text" id="textarea" placeholder="Drop me a message"></textarea>
+			<br />
+
+			<label for="email"></label>
+			<input type="text" id="eMail" name="e-mail" placeholder="name@example.com">
+
+
+<!-- for fun			<label for="location">location</label>
+				<select id="country" name="country">
+			 		<option value="New York City">New York CIty</option>
+					<option value="The rest of the place">The rest of the place</option>
+			    </select> -->
+
+			
+		</fieldset>
+				
+		<div class="btnCont">	
+			<button type="button" class="button" onclick="myMessage">Send it <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+		</div>
+
+<!-- 			<div id="myMessage">
+				<p>someday this form will really function</p>
+			</div> -->
+
+
+		</form>
+	</section>
+
+
+<!-- end project-portfolio container // start contact-connect container -->
+		<section class="contactCont">
+			<ul class="contact">
+				<li>
+					<a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> email</a>
+				</li>
+
+				<li>
+					<a href="https://github.com/rspica" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> github</a>
+				</li>
+
+				<li>
+					<a href="http://stackoverflow.com/users/7693224/rspica?tab=profile" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> stack overflow</a>
+				</li>
+
+				<li>
+					<a href="https://www.linkedin.com/in/robertspica/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> linkedin</a>
+				</li>
+			</ul>
+			<div>
+				<p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>copyright 2017</p>
+			</div>
+		</section>
+
+	<script src="https://use.fontawesome.com/deca8cd297.js"></script>
+
+</body>
+</html>
