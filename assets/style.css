@@ -304,7 +304,20 @@ main {
     background-size: cover;
 }
 
+.name {
+	position: absolute;
+	top: 140px;
+	left: 7%;
+	transform: translate(-50% 0);
+	font: 900 4em 'Montserrat', sans-serif;
+	color: rgba(0, 0, 0, .1);
+	line-height: .5;
+	text-align: center;
+}
+
 .introCopy {
+	position: relative;
+	top: -0px;
 	width: 100%;
 	max-width: 375px;
 	margin: 25px auto;
@@ -319,12 +332,14 @@ main {
 
 .scrollBox {
 	position: relative;
+	bottom: 0;
 	text-align: center;
 }
 
 .scrollNext {
 	position: relative;
-	top: 10px;
+	top: 5px;
+	font-size: .7em;
 	color: #ccc;
 }
 
