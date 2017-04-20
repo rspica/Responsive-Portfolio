@@ -1,0 +1,654 @@
+
+
+body {
+	font: 14px 'Montserrat', sans-serif;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/* ------------------------------------------
+begins main header navigation styles here -->
+------------------------------------------- */
+.navTop {
+	position: fixed;
+	width: 100%;
+	max-width: 1280px;
+	padding: 40px 5% 35px;
+/*	margin: 0 auto;*/
+	font: 300 1em 'Montserrat', sans-serif;
+	background: rgba(255, 255, 255, .6);
+	box-sizing: border-box;
+	z-index: 99;
+	overflow: hidden;
+}
+
+.navMain {
+	color: rgb(0, 0, 0);
+}
+
+.navMain:hover {
+	color: rgb(150, 150, 150);
+}
+
+.navBrand {
+	float: left;
+	color: rgb(0, 0, 0);
+}
+
+.navMain li a {
+	padding-left: 30px;
+	color: rgb(0, 0, 0);
+	float: right;
+}
+
+.navMain li a:hover:after {
+	border-bottom: 1px solid rgb(100, 100, 100);
+	padding-bottom: 9px;
+	width: 15px;
+	content: "";
+	display: block;
+	color: rgb(0, 0, 0);
+}
+
+.fa-circle-o-notch {
+	color: rgb(200, 200, 200);
+}
+
+/* -------------------------------------------
+  <-- Mobile navigation header -->
+ ------------------------------------------- */ 
+
+#navBurger, .name, .scrollBox {
+	display: none;
+}
+
+/* ------------------------------------------
+this ends main header navigation styles 
+
+begins about/bio section styles here -->
+------------------------------------------- */
+main {
+	position: relative;
+	top: 110px;
+	clear: both;
+	margin-bottom: 100px;
+	overflow: auto;
+}
+
+
+.introCont {
+	position: relative;
+	height: 100vh;
+}
+
+.introImg {
+	height: 100%;
+	background-image:url("../images/BW-city-skyline-LRG.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.introCopy {
+	position: absolute;
+	top: 10%;
+	max-width: 30%;
+	min-width: 420px;
+	font: 300 1.7em 'Montserrat', sans-serif;
+	padding-left: 5%;
+}
+.mobileImg {
+	display: none;
+}
+
+#introImage {
+	margin: 0 auto;
+	width: 100%;
+	min-width: 835px;
+	height: auto;
+}
+
+
+
+
+/* ------------------------------------------
+this ends about styles 
+
+begins project-portfolio section styles here -->
+------------------------------------------- */
+.projContainer {
+	padding: 0 5%;
+}
+
+#projPage {
+	padding-bottom: 75px;
+}
+
+.projRow {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.projCol {
+	position: relative;
+	box-sizing: border-box;
+/*	flex: 1;
+	max-width: 350px;*/
+	flex-basis: 30%;
+	margin-bottom: 75px;
+	margin-right: 25px;
+/*	background: rgb(100, 200, 200);*/
+}
+
+.pTitle {
+	font: 300 1.2em 'Montserrat', sans-serif;
+}
+
+.pDescript {
+	font: 300 .8em/1.15em 'Overpass Mono', monospace;
+}
+
+.project {
+	display: none;
+}
+
+.projThumb:hover > .project{
+ 	display: inline-block;
+ 	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 90px 50px;
+	color: rgba(255, 255, 255, .9);
+	background: rgba(0, 0, 0, .7);
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+
+
+/* ------------------------------------------
+this ends project-portfolio styles 
+
+begins contact/connect section styles here -->
+------------------------------------------- */
+.contactCont {
+	position: relative;
+	margin: 80px 5%;
+	padding-top: 10px;
+	border-top: 1px solid #000;
+	z-index: 99;
+}
+.contact {
+	max-width: 80%;
+}
+
+ i{
+ 	margin-right: 5px;
+ }
+
+.contact li {
+	position: relative;
+}
+
+li a {
+	top: 10px;
+	float: left;
+	display: inline-block;
+	margin-right: 20px;
+	padding-bottom: 20px;
+	color: rgb(200, 200, 200);
+}
+
+.contact li:hover a {
+	color: tomato;
+
+}
+
+/* ------------------------------------------
+I can not get just the icon to change when hovering over the whole link -->
+------------------------------------------- */
+i:hover {
+	color: tomato;
+}
+
+li:nth-child(1) {
+	padding-left: 0;
+}
+
+.copyright {
+	right: 5%;
+	float: right;
+	font-size: .7em;
+	color: rgb(200, 200, 200);
+}
+
+
+/* ------------------------------------------
+this begins specific page styles here -->
+------------------------------------------- */
+
+
+/* ------------------------------------------
+this ends footer styles 
+
+begins project page section styles here -->
+------------------------------------------- */
+.heroImg {
+	position: relative;
+/*	width: 100%;*/
+/*	height: auto;*/
+	margin: 0 auto;
+/*	overflow: auto;
+	box-sizing: border-box;*/
+	text-align: center;
+}
+
+#mainImage {
+	width: 100%;
+	height: auto;
+}
+
+#projPage {
+	position: relative;
+	top: 100px;
+
+}
+
+
+/* ------------------------------------------
+this ends Project page styles 
+
+begins contact page section styles here -->
+------------------------------------------- */
+*:focus{
+	outline: none;
+}
+
+#formCont {
+	position: relative;
+	top: 110px;
+	width: 100%;
+	padding: 0 5%;
+	padding-bottom: 100px;
+
+}
+
+input, textarea, button {
+	border: none;
+
+}
+#name, #lastName, #eMail, #textarea {
+	padding: 10px 30% 10px 0;
+	margin-bottom: 50px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: rgb(225, 225, 225);
+}
+
+#name {
+		margin-right: 25px;
+}
+
+.btnCont {
+	position: relative;
+	padding-bottom: 50px
+}
+
+.button {
+	position: absolute;
+	padding: 20px;
+	background-color: rgb(0, 175, 175);
+	color: rgb(200, 200, 200);
+	transition: color 1s ease-out .25s, background .2s ease-out .25s, font-size .05s ease-out .25s;
+}
+
+.button:hover {
+	font-size: 28px;
+	background-color: rgb(1, 254, 127);
+	color: rgb(0, 0, 0)
+}
+
+.button:active {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	border-left: 5px solid rgb(0, 224, 97);
+	border-top: 5px solid rgb(0, 224, 97);
+}
+
+.fa-paper-plane:hover {
+	color: rgb(200, 200, 200);
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------
+Begins Mobile styles @Media < 600px 
+
+begins 
+------------------------------------------------------------------------
+
+
+Start mobile styling About page section styles here -->
+---------------------------------------------------------------------- */
+
+
+@media (max-width: 600px) {
+
+
+	.navMain, .navBrand, .introImg {
+		display: none;
+	}
+
+	.navTop {
+	padding: 30px 5% 10px;
+	}
+
+	#navBurger {
+		display: block;
+		position: absolute;
+		top: 13px;
+		right: 0;
+		height: 20px;
+		width: 30px;
+		margin-right: 18px;
+		cursor: pointer;
+	}
+
+	span {
+		position: absolute;
+		display: block;
+		height: 2px;
+		width: 30px;
+		border-radius: 5px;
+		background: rgb(100, 100, 100);
+		transition: .25s ease-in-out;
+	}
+
+	#navBurger span:nth-child(1) {
+		top: 0;
+	}
+
+	#navBurger span:nth-child(2),
+	#navBurger span:nth-child(3) {
+		top: 10px;
+	}
+
+	#navBurger span:nth-child(4) {
+		top: 20px;
+	}
+
+	#navBurger.open span:nth-child(1) {
+		top: 9px;
+		opacity: 0;
+	}
+
+/* --------------------------------------------
+click event action to open burger icon here -->
+
+
+----------------------------------------------- 
+
+
+	#navBurger.open span:nth-child(2) {
+		transform: rotate(225deg);
+	}
+
+	#navBurger.open span:nth-child(3) {
+
+		transform: rotate(-225deg);
+	}
+
+	#navBurger.open span:nth-child(4) {
+		top: 11px;
+		opacity: 0;
+	}*/
+
+
+	main {
+		position: relative;
+		top: 50px;
+		clear: both;
+		margin-bottom: 100px;
+		overflow: auto;
+	}
+
+	.introCont {
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
+		height: 90vh;
+	}
+
+
+	#introImage {
+		display: none;
+	}
+
+	.mobileImg {
+		display: inline-block;
+		margin: 30px auto 20px;
+		width: 150px;
+		height: 150px;
+	    border-radius: 50%;
+/*		background-image: url("../images/ROBERT_2886-RTRS.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+	    background-size: cover;*/
+	}
+
+	.name {
+		display: block;
+		position: relative;
+		top: 0;
+		font: 700 5em 'Montserrat', sans-serif;
+		color: rgba(0, 0, 0, .1);
+		line-height: .5;
+		text-align: center;
+	}
+
+	.introCopy {
+		position: relative;
+		top: -10px;
+		width: 90%;
+		max-width: 500px;
+		min-width: 350px;
+		padding-left: 0;
+		margin: 0 auto;
+		text-align: center;
+		font: 100 1.9em 'Montserrat', sans-serif;
+
+	}
+
+/*--------------------------------------------------------------
+	<-- Mobile Scroll element bottom of home screen <= 600px -->
+---------------------------------------------------------------*/
+
+
+	.scrollBox {
+		position: absolute;
+		bottom: 0;
+		display: inline-block;
+	}
+
+	.scrollNext {
+		position: relative;
+		top: 5px;
+		font-size: .7em;
+		color: rgb(150, 150, 150);
+	}
+
+	#angleDown {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		color: rgb(150, 150, 150);
+		border-style: solid;
+		border-width: 0 1px 1px 0;
+		transform: rotate(45deg); 
+	}
+
+	.scrollNext:hover, #angleDown:hover{
+		color: tomato;
+		color: tomato;
+	}
+
+
+/*-------------------------------------------------------------
+	<-- Mobile project area for screen <= 600px -->
+--------------------------------------------------------------*/
+
+
+	#work {
+		position: relative;
+		top: 25px;
+	}
+
+	.projContainer {
+		padding: 0 5%;
+	}
+
+	#projPage {
+		padding-bottom: 75px;
+	}
+
+	.projRow {
+		display: block;
+		width: 100%;
+	}
+
+	.projCol {
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		margin-bottom: 50px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.pTitle {
+		font: 300 1.2em 'Montserrat', sans-serif;
+	}
+
+	.pDescript {
+		font: 300 .8em/1.15em 'Overpass Mono', monospace;
+	}
+
+	.project {
+		display: none;
+	}
+
+	.projThumb:hover .project{
+	 	display: inline-block;
+	 	position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 90px 50px;
+		color: rgba(255, 255, 255, .9);
+		background: rgba(0, 0, 0, .7);
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+
+
+/*-------------------------------------------------------------
+	<-- Mobile footer area for screen <= 600px -->
+--------------------------------------------------------------*/
+
+
+	.contactCont {
+		margin: 80px 5%;
+		padding-top: 10px;
+		border-top: 1px solid #000;
+		text-align: center;
+	}
+
+	.contact li {
+		position: static;
+	}
+
+	.contact li a {
+		top: 10px;
+		float: none;
+		display: inline-block;
+
+	}
+
+	.contact {
+		display: inline-block;
+		max-width: 100%;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.fa {
+		font-size: 4em;
+	}
+
+	.copyrightCont {
+		padding-top: 30px;
+		}
+
+	.copyright {
+		float: none;
+		position: static;
+		max-width: 500px;
+		padding: 20px;
+		font-size: .7em;
+		text-align: center;
+		color: rgb(200, 200, 200);
+		background: rgb(0, 0, 0);
+	}
+
+}/* <--  This ends mobile styles max width 600px  --> */
+
+@media (max-width: 400px) {
+
+
+	.mobileImg {
+		display: inline-block;
+		margin: 20px auto 0;
+	}
+
+	.name {
+		display: block;
+		position: relative;
+		top: 0;
+		font: 700 3em 'Montserrat', sans-serif;
+	}
+
+	.introCopy {
+		position: relative;
+		top: -10px;
+		width: 90%;
+		max-width: 500px;
+		min-width: 350px;
+		padding-left: 0;
+		margin: 0 auto;
+		text-align: center;
+		font: 100 1.4em 'Montserrat', sans-serif;
+
+	}
+
+}/* <--  This ends mobile styles max width 400px  --> */
+
+
+
+
+
+
+
+
