@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<title>Robert Spica Portfolio</title>
-	 	<link rel="stylesheet" type="text/css" href="./assets/reset.css"> 
-	<link rel="stylesheet" type="text/css" href="./assets/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Overpass+Mono:light,semi-bold" rel="stylesheet">	
+ 	<link rel="stylesheet" type="text/css" href="./assets/reset.css"> 
+	<link rel="stylesheet" type="text/css" href="./assets/style-responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,semi-bold|Overpass+Mono:light,semi-bold" rel="stylesheet">	
 </head>
 
 <body>
-	<!-- start main Navigation container -->
+
+<!-- start main Navigation container -->
 	<header class="navTop">
-		<h1 class="navBrand"><a href="./index.html" class="navMain navBrand">Robert Spica</a></h1>
-		<ul>
-			<li><a href="./index.html" class="navMain">about</a></li>
-			<li><a href="./portfolio.html" class="navMain">work</a></li>
-			<li><a href="./contact.html" class="navMain">connect</a></li>
+		<h1 class="navBrand"><i class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"><a href="./index.html" class="navMain"></i>Robert Spica</a></h1>
+		<ul class="navMain">	
+			<li><a href="./contact.html">connect</a></li>
+			<li><a href="./index.html">about</a></li>
+			<li><a href="./portfolio.html">work</a></li></li>
 		</ul>
+
+<!-- start mobile menu container // Hamburger appears at <= 600px -->
+		<div id="navBurger">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+ <!-- start mobile menu container // slide out menu at <= 600px -->
+
 	</header>
 
 
@@ -28,12 +43,12 @@
 
 <!-- end intro container // start project portfolio container -->
 
-		<article class="projContainer" id="projPage">
+		<article id="work" class="projContainer">
 			<div class="projRow">
 
 <!-- start project-container project 1 -->
-				<section class="projCol"><!-- start project portfolio item x-->
-					<a class="projThumb" href="#"><img src="http://placehold.it/350x240" alt="project 1">
+				<section class="projCol"><!-- start project portfolio item 1-->
+					<a class="projThumb" href="#"><img src="http://placehold.it/455x260" alt="project 1">
 						<div class="project">
 							<h3 class="pTitle">Project 1</h3>  
 							<p class="pDescript">Lorem ipsum project description...</p>
@@ -43,7 +58,7 @@
 <!-- end project-container project 1 // start project-container project 2 -->
 
 				<section class="projCol">
-					<a class="projThumb" href="#"><img src="http://placehold.it/350x240" alt="project 2">
+					<a class="projThumb" href="#"><img src="http://placehold.it/455x260" alt="project 2">
 						<div class="project">
 							<h3 class="pTitle">Project 2</h3>  
 							<p class="pDescript">Lorem ipsum project description...</p>
@@ -53,7 +68,7 @@
 <!-- end project-container project 2 // start project-container project 3 -->
 
 				<section class="projCol">
-					<a class="projThumb" href="#"><img src="http://placehold.it/350x240" alt="project 3">
+					<a class="projThumb" href="#"><img src="http://placehold.it/455x260" alt="project 3">
 						<div class="project">
 							<h3 class="pTitle">Project 3</h3>  
 							<p class="pDescript">Lorem ipsum project description...</p>
@@ -63,7 +78,7 @@
 <!-- end project-container project 3 // start project-container project 4 -->
 
 				<section class="projCol">
-					<a class="projThumb" href="#"><img src="http://placehold.it/350x240" alt="project 4">
+					<a class="projThumb" href="#"><img src="http://placehold.it/455x260" alt="project 4">
 						<div class="project">
 							<h3 class="pTitle">Project 4</h3>  
 							<p class="pDescript">Lorem ipsum project description...</p>
@@ -73,7 +88,7 @@
 <!-- end project-container project 4 // start project-container project 5 -->
 
 				<section class="projCol">
-					<a class="projThumb" href="#"><img src="http://placehold.it/350x240" alt="project 5">
+					<a class="projThumb" href="#"><img src="http://placehold.it/455x260" alt="project 5">
 						<div class="project">
 							<h3 class="pTitle">Project 5</h3>  
 							<p class="pDescript">Lorem ipsum project description...</p>
@@ -83,7 +98,7 @@
 <!-- end project-container project 5 // start project-container project 6 -->
 
 				<section class="projCol">
-					<a class="projThumb" href="#"><img src="http://placehold.it/350x240" alt="project 6">
+					<a class="projThumb" href="#"><img src="http://placehold.it/455x260" alt="project 6">
 						<div class="project">
 							<h3 class="pTitle">Project 6</h3>  
 							<p class="pDescript">Lorem ipsum project description...</p>
@@ -95,32 +110,33 @@
 			</div>
 		</article>
 
-
 <!-- end project-portfolio container // start contact-connect container -->
 		<section class="contactCont">
 			<ul class="contact">
 				<li>
-					<a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> email</a>
+					<a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i><span class="hide"> email</span></a>
 				</li>
 
 				<li>
-					<a href="https://github.com/rspica" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> github</a>
+					<a href="https://github.com/rspica" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span class="hide"> github</span></a>
+				</li>
+				<li>
+					<a href="http://stackoverflow.com/users/7693224/rspica?tab=profile" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i><span class="hide"> stack overflow</span></a>
 				</li>
 
 				<li>
-					<a href="http://stackoverflow.com/users/7693224/rspica?tab=profile" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> stack overflow</a>
-				</li>
-
-				<li>
-					<a href="https://www.linkedin.com/in/robertspica/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> linkedin</a>
+					<a href="https://www.linkedin.com/in/robertspica/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span class="hide"> linkedin</span></a>
 				</li>
 			</ul>
-			<div>
+			<div class="copyrightCont">
 				<p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>copyright 2017</p>
 			</div>
 		</section>
 
+	</main>
+
 	<script src="https://use.fontawesome.com/deca8cd297.js"></script>
+	<script type="text/css" href="./assets/main.js"></script>
 
 </body>
 </html>

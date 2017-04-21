@@ -13,7 +13,7 @@ begins main header navigation styles here -->
 	position: fixed;
 	width: 100%;
 	max-width: 1280px;
-	padding: 40px 5% 35px;
+	padding: 40px 5% 20px;
 /*	margin: 0 auto;*/
 	font: 300 1em 'Montserrat', sans-serif;
 	background: rgba(255, 255, 255, .6);
@@ -75,15 +75,18 @@ main {
 	overflow: auto;
 }
 
-
 .introCont {
 	position: relative;
-	height: 100vh;
+}
+
+.mobileImg {
+	display: none;
 }
 
 .introImg {
 	height: 100%;
-	background-image:url("../images/BW-city-skyline-LRG.png");
+	padding-bottom: 40%;
+	background-image: url("../images/BW-city-skyline-LRG.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
@@ -96,8 +99,11 @@ main {
 	font: 300 1.7em 'Montserrat', sans-serif;
 	padding-left: 5%;
 }
-.mobileImg {
-	display: none;
+
+.introCopy p {
+	display: inline;
+	line-height: 1.5;
+	background: tomato;
 }
 
 #introImage {
@@ -129,6 +135,7 @@ begins project-portfolio section styles here -->
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-start;
+	margin-top: 20px;
 }
 
 .projCol {
@@ -199,7 +206,7 @@ li a {
 	float: left;
 	display: inline-block;
 	margin-right: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 0px;
 	color: rgb(200, 200, 200);
 }
 
@@ -229,21 +236,18 @@ li:nth-child(1) {
 
 /* ------------------------------------------
 this begins specific page styles here -->
-------------------------------------------- */
 
-
-/* ------------------------------------------
+---------------------------------------------
 this ends footer styles 
 
 begins project page section styles here -->
 ------------------------------------------- */
+
 .heroImg {
 	position: relative;
 /*	width: 100%;*/
 /*	height: auto;*/
 	margin: 0 auto;
-/*	overflow: auto;
-	box-sizing: border-box;*/
 	text-align: center;
 }
 
@@ -330,9 +334,9 @@ input, textarea, button {
 
 
 /*----------------------------------------------------------------------
-Begins Mobile styles @Media < 600px 
+Begins:
 
-begins 
+Mobile styles @Media screen < 600px 
 ------------------------------------------------------------------------
 
 
@@ -340,7 +344,7 @@ Start mobile styling About page section styles here -->
 ---------------------------------------------------------------------- */
 
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
 
 	.navMain, .navBrand, .introImg {
@@ -349,6 +353,7 @@ Start mobile styling About page section styles here -->
 
 	.navTop {
 	padding: 30px 5% 10px;
+	background: transparent;
 	}
 
 	#navBurger {
@@ -391,9 +396,10 @@ Start mobile styling About page section styles here -->
 	}
 
 /* --------------------------------------------
-click event action to open burger icon here -->
+ begin:
 
-
+ Animations for click event that opens 
+ burger icon here -->
 ----------------------------------------------- 
 
 
@@ -424,7 +430,7 @@ click event action to open burger icon here -->
 		position: relative;
 		text-align: center;
 		margin: 0 auto;
-		height: 90vh;
+		height: 85vh;
 	}
 
 
@@ -464,8 +470,14 @@ click event action to open burger icon here -->
 		margin: 0 auto;
 		text-align: center;
 		font: 100 1.9em 'Montserrat', sans-serif;
-
 	}
+
+	.introCopy p {
+	display: inline;
+	font-size: 100%;
+	line-height: 1.35;
+	background: transparent;
+}
 
 /*--------------------------------------------------------------
 	<-- Mobile Scroll element bottom of home screen <= 600px -->
@@ -495,8 +507,7 @@ click event action to open burger icon here -->
 		transform: rotate(45deg); 
 	}
 
-	.scrollNext:hover, #angleDown:hover{
-		color: tomato;
+	.scrollBox:hover .scrollNext, .scrollBox:hover #angleDown {
 		color: tomato;
 	}
 
@@ -576,13 +587,14 @@ click event action to open burger icon here -->
 
 	.contact li {
 		position: static;
+		display: inline;
 	}
 
 	.contact li a {
 		top: 10px;
 		float: none;
 		display: inline-block;
-
+		padding-bottom: 20px;
 	}
 
 	.contact {
@@ -615,7 +627,7 @@ click event action to open burger icon here -->
 
 }/* <--  This ends mobile styles max width 600px  --> */
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
 
 
 	.mobileImg {
@@ -633,9 +645,9 @@ click event action to open burger icon here -->
 	.introCopy {
 		position: relative;
 		top: -10px;
-		width: 90%;
+		width: 50%;
 		max-width: 500px;
-		min-width: 350px;
+		min-width: 300px;
 		padding-left: 0;
 		margin: 0 auto;
 		text-align: center;
